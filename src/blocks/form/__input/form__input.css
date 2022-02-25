@@ -1,0 +1,15 @@
+.form__input {
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ccc;
+  border: 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.form__input::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #ccc;
+}
