@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Register(props) {
@@ -16,7 +16,7 @@ function Register(props) {
 
     function handleSubmit(event) {
         event.preventDefault();
-        props.handleRegistration(email, password);
+        props.handleRegister(email, password);
     }
 
     return (
@@ -52,11 +52,11 @@ function Register(props) {
                 />
                 <span className="form__error" id="password-error"></span>
 
-                <button className="form__button" type="submit" onSubmit={handleSubmit}>Зарегистрироваться</button>
+                <button className="form__btn" type="submit" onSubmit={handleSubmit}>Зарегистрироваться</button>
             </form>
 
             <p className="form__signin">Уже зарегистрированы?
-                <Link to="signin" className="form__link">Войти</Link>
+                <Link to="signin" className="form__link"> Войти</Link>
             </p>
         </div>
     )

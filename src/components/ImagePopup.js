@@ -1,5 +1,3 @@
-import React from 'react';
-
 function ImagePopup(props) {
     return (
         <div className={`popup popup-place ${props.card.link ? "popup_opened" : ''}`}>

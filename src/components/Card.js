@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { CurrentUserContext } from '../contexts/CurrentUserContext';
 
 function Card(props) {
@@ -40,13 +40,11 @@ function Card(props) {
             <div className="element__container">
                 <h2 className="element__title">{props.card.name}</h2>
                 <div className="element__like">
-
                     <button
                         className={cardLikeButtonClassName}
                         type="button"
                         onClick={handleLikeClick}>
                     </button>
-
                     <span className="element__like-number">{props.card.likes.length}</span>
                 </div>
             </div>

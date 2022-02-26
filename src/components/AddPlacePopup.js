@@ -34,6 +34,7 @@ function AddPlacePopup(props) {
             onClose={props.onClose}
             onSubmit={handleSubmit}
         >
+
             <input
                 className="popup__input popup__input_text_title"
                 type="text"

@@ -1,14 +1,15 @@
-.form__title {
-  margin: 0 auto 50px;
+.popup__result-title {
+  max-width: 358px;
+  font-weight: 900;
   font-size: 24px;
   line-height: 29px;
-  font-weight: 900;
   text-align: center;
+  color: #000;
 }
-    
+  
 @media screen and (max-width: 767px) {
-  .form__title {
-    margin-bottom: 40px;
+  .popup__result-title {
+    max-width: 244px;
     font-size: 20px;
     line-height: 24px;
   }

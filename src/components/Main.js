@@ -1,12 +1,12 @@
-import React from 'react';
+import { useContext } from 'react';
 import Card from './Card';
 import { CurrentUserContext } from '../contexts/CurrentUserContext';
 import { CardsContext } from '../contexts/CardsContext';
 
 function Main(props) {
 
-    const currentUser = React.useContext(CurrentUserContext);
-    const cards = React.useContext(CardsContext);
+    const currentUser = useContext(CurrentUserContext);
+    const cards = useContext(CardsContext);
 
     return (
         <main className="content">

@@ -1,0 +1,22 @@
+.navbar__btn {
+  margin: 0 0 0 24px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  line-height: 22px;
+  color: #A9A9A9;
+  cursor: pointer;
+  transition: ease;
+}
+  
+.navbar__btn:hover {
+  opacity: .6;
+}
+  
+@media screen and (max-width: 767px) {
+  .navbar__btn {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}

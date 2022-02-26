@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function Login(props) {
 
@@ -51,7 +51,7 @@ function Login(props) {
                 />
                 <span className="form__error" id="password-error"></span>
 
-                <button className="form__button" type="submit" onSubmit={handleSubmit}>Войти</button>
+                <button className="form__btn" type="submit" onSubmit={handleSubmit}>Войти</button>
             </form>
         </div>
     );
