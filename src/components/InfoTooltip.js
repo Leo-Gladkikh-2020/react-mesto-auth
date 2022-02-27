@@ -3,7 +3,7 @@ import mistakeIcon from '../images/mistake-icon.svg';
 
 function InfoTooltip(props) {
     return (
-        <div className={`popup ${props.isOpen ? "popup_opened" : ''}`}>
+        <div className={`popup ${props.isOpen && "popup_opened"}`}>
             <div className="popup__content">
                 <button className="popup__close-btn" type="button" onClick={props.onClose}></button>
                 <img className="popup__result-img" src={props.tooltipStatus ? successIcon : mistakeIcon} alt="Результат авторизации" />

@@ -150,6 +150,7 @@ function App() {
             .then(() => {
                 setTooltipStatus(true);
                 handleLogin(email, password);
+                history.push('/signin');
             })
             .catch(err => {
                 setTooltipStatus(false);
@@ -170,6 +171,10 @@ function App() {
                         setUserEmail(res.data.email);
                         history.push('/');
                     }
+                })
+                .catch(err => {
+                    localStorage.removeItem('jwt');
+                    console.log(err);
                 })
         }
     }
